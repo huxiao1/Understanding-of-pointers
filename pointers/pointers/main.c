@@ -44,6 +44,7 @@ int main(){
 }
  */
 
+/*搞不懂的
 #include <stdio.h>
 int main(void)
 {
@@ -56,3 +57,45 @@ int main(void)
     py = px;  //把一个指针的值赋给另一个指针
     printf("%d %d %d %d",x,y,*px,*py);
 }
+ */
+
+/*通过指针交换两个数
+ *(&a)=a
+ &(*pa)=pa
+ 
+ 
+#include <stdio.h>
+
+int main(){
+    int a = 100, b = 999, temp;
+    int *pa = &a, *pb = &b;
+    printf("a=%d, b=%d\n", a, b);
+    //开始交换
+    temp = *pa;  //将a的值先保存起来
+    *pa = *pb;  //将b的值交给a
+    *pb = temp;  //再将保存起来的a的值交给b
+    /／结束交换
+    printf("a=%d, b=%d\n", a, b);
+    return 0;
+}
+*/
+
+/*
+#include <stdio.h>
+
+int main(){
+    int a = 1, b = 2, c = 3;
+    int *p = &c;
+    printf("%d\n",*p);
+    printf("%d\n",*(p+1));
+    printf("%d\n",*(p+2));
+    printf("%d\n",*(p+3));
+    printf("%d\n",*(p+4));
+    return 0;
+}*/
+
+
+
+
+
+
