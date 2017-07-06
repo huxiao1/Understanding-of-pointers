@@ -52,8 +52,8 @@ int main(void)
     int y=1;
     int  *px = &x, *py = &y;
     y = *px + 5;  //表示把x的内容加5并赋给y，*px+5相当于(*px)+5
-    y = ++*px;  //px的内容加上1之后赋给y，++*px相当于++(*px)
-    y = *px++;  //相当于y=(*px)++
+    y = ++*px;  //px的内容加上1之后赋给y，++*px相当于++(*px)，先取px的值在加一再赋值
+    y = *px++;  //相当于y=(*px)++,px地址指向下一个地址
     py = px;  //把一个指针的值赋给另一个指针
     printf("%d %d %d %d",x,y,*px,*py);
 }
