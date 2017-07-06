@@ -57,3 +57,19 @@ int main(void)
     printf("c=%d d=%d e=%d f=%d g=%d g2=%d\n",c,d,e,f,g,g2);
 }
  */
+
+/*字符串
+#include <stdio.h>
+int main(){
+    char str[] = "http://c.biancheng.net";
+    int len = strlen(str), i;
+    //直接输出字符串
+    printf("%s\n", str);
+    //每次输出一个字符
+    for(i=0; i<len; i++){
+        printf("%c", str[i]);
+    }
+    printf("\n");
+    return 0;
+}
+ */
